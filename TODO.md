@@ -1,0 +1,2 @@
+- [ ] add a setup.py file and change the name of the repo to handle imports
+- [ ] check whether we need to set a path to a model architecture ? 

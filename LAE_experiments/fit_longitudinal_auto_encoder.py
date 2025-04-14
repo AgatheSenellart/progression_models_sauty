@@ -344,11 +344,11 @@ def estimate_longitudinal_auto_encoder_model(logger, path_data, path_CAE, xml_pa
     logger.info(f">> Estimation took: {end_time-start_time}")
 
 def main():
-    path_data = 'ADNI_data/ADNI_t1'
-    path_CAE = 'CVAE_3D_t1'
+    path_data = '/home/asenella/data/starmen/output_random/dict_data_sauty.pt'
+    path_CAE = 'CVAE_2D_starmen'
     xml_parameters = dfca.io.XmlParameters()
     xml_parameters._read_model_xml('model.xml')
-    Settings().output_dir = 'output
+    Settings().output_dir = 'output'
     deformetrica = dfca.Deformetrica(output_dir=Settings().output_dir, verbosity=logger.level)
     estimate_longitudinal_auto_encoder_model(logger, path_data, path_CAE, xml_parameters=xml_parameters)
 
